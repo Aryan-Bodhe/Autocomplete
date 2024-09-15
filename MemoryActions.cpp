@@ -112,16 +112,16 @@ vector<string> getSuggestions(Node* &root, string typedWord) {
 }
 
 // update: return the results vector to use 
-void printMemorySuggestions(Node* &root, string curr) //returns max first 5 memory suggestions
+vector<string> printMemorySuggestions(Node* &root, string curr) //returns max first 5 memory suggestions
 {
-    if(root == NULL) {
-        cout << EMPTY_TREE_ERROR << endl;
-        return;
-    }
-
     Node* node = root;
     vector<string> results;
     int suggestionCount = SUGGESTION_COUNT;
+
+    if(root == NULL) {
+        cout << EMPTY_TREE_ERROR << endl;
+        return results;
+    }
 
     results = getSuggestions(node, curr);
 
@@ -130,5 +130,5 @@ void printMemorySuggestions(Node* &root, string curr) //returns max first 5 memo
         cout << suggestedWord << endl;
     }
     cout << "\033[0m";
-    return;
+    return results;
 }
