@@ -1,7 +1,7 @@
 # Autocomplete Wizard
-This program can suggest words based on what the user types using a Trie data structure.
-Date created : 11-09-2024.
-Creator : Aryan Bodhe
+- This program can suggest words based on what the user types using a Trie data structure.
+- Date created : 11-09-2024.
+- Creator : Aryan Bodhe
 
 ## Features 
 1. Suggest words based on what user has typed already.
